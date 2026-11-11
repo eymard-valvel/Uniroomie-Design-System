@@ -1,0 +1,23 @@
+.ur-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: 1px solid transparent;
+  border-radius: var(--ur-radius-md);
+  font: var(--ur-font-weight-semibold) var(--ur-font-size-sm) var(--ur-font-family);
+  cursor: pointer;
+  transition: background-color .18s ease, border-color .18s ease, transform .12s ease;
+}
+.ur-button--small { min-height: 32px; padding: 6px 12px; }
+.ur-button--medium { min-height: 40px; padding: 9px 16px; }
+.ur-button--large { min-height: 48px; padding: 12px 20px; }
+.ur-button--primary { color: #fff; background: var(--ur-primary); border-color: var(--ur-primary); }
+.ur-button--primary:hover:not(:disabled) { background: var(--ur-primary-hover); border-color: var(--ur-primary-hover); }
+.ur-button--primary:active:not(:disabled) { background: var(--ur-primary-pressed); transform: translateY(1px); }
+.ur-button--secondary { color: var(--ur-primary); background: #fff; border-color: var(--ur-primary); }
+.ur-button--secondary:hover:not(:disabled) { background: #fff1eb; }
+.ur-button:focus-visible { outline: 2px solid var(--ur-focus); outline-offset: 2px; }
+.ur-button:disabled { color: var(--ur-disabled-text); background: var(--ur-disabled-bg); border-color: var(--ur-disabled-bg); cursor: not-allowed; }
+.ur-button__spinner { width: 14px; height: 14px; border: 2px solid currentColor; border-right-color: transparent; border-radius: 50%; animation: ur-spin .7s linear infinite; }
+@keyframes ur-spin { to { transform: rotate(360deg); } }

@@ -1,0 +1,13 @@
+.ur-input { display: grid; gap: 6px; width: 100%; font-family: var(--ur-font-family); }
+.ur-input__label { color: var(--ur-text-muted); font-size: var(--ur-font-size-xs); }
+.ur-input__field { width: 100%; min-width: 0; border: 1px solid var(--ur-border); border-radius: var(--ur-radius-md); background: #fff; color: var(--ur-text); font: var(--ur-font-weight-normal) var(--ur-font-size-sm) var(--ur-font-family); outline: none; transition: border-color .15s, box-shadow .15s; }
+.ur-input--small .ur-input__field { min-height: 32px; padding: 6px 10px; }
+.ur-input--medium .ur-input__field { min-height: 40px; padding: 9px 12px; }
+.ur-input--large .ur-input__field { min-height: 48px; padding: 12px 14px; }
+.ur-input__field:focus { border-color: var(--ur-focus); box-shadow: 0 0 0 2px rgb(52 120 246 / 14%); }
+.ur-input--error .ur-input__field { border-color: var(--ur-error); }
+.ur-input--success .ur-input__field { border-color: var(--ur-success); }
+.ur-input__message { font-size: var(--ur-font-size-xs); color: var(--ur-text-muted); }
+.ur-input--error .ur-input__message { color: var(--ur-error); }
+.ur-input--success .ur-input__message { color: var(--ur-success); }
+.ur-input__field:disabled { background: var(--ur-disabled-bg); color: var(--ur-disabled-text); cursor: not-allowed; }

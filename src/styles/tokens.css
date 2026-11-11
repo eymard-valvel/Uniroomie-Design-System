@@ -1,0 +1,42 @@
+:root {
+  /* Valores iniciales aproximados a partir de la captura de Figma.
+     Sustituirlos por los valores exactos consultados en Dev Mode. */
+  --ur-primary: #ff5a1f;
+  --ur-primary-hover: #eb4b14;
+  --ur-primary-pressed: #d9400c;
+  --ur-secondary: #253746;
+  --ur-text: #172a38;
+  --ur-text-muted: #64748b;
+  --ur-surface: #ffffff;
+  --ur-surface-muted: #f1f3f5;
+  --ur-border: #d5dbe1;
+  --ur-focus: #3478f6;
+  --ur-error: #e53935;
+  --ur-success: #159a6c;
+  --ur-warning: #e6a23c;
+  --ur-info: #2583c5;
+  --ur-disabled-bg: #e5e8eb;
+  --ur-disabled-text: #8a949e;
+
+  --ur-font-family: Inter, "Segoe UI", Arial, sans-serif;
+  --ur-font-size-xs: 0.75rem;
+  --ur-font-size-sm: 0.875rem;
+  --ur-font-size-md: 1rem;
+  --ur-font-size-lg: 1.125rem;
+  --ur-font-weight-normal: 400;
+  --ur-font-weight-medium: 500;
+  --ur-font-weight-semibold: 600;
+
+  --ur-space-1: 4px;
+  --ur-space-2: 8px;
+  --ur-space-3: 12px;
+  --ur-space-4: 16px;
+  --ur-space-5: 20px;
+  --ur-space-6: 24px;
+
+  --ur-radius-sm: 4px;
+  --ur-radius-md: 8px;
+  --ur-radius-lg: 12px;
+  --ur-shadow-card: 0 2px 10px rgb(23 42 56 / 8%);
+}
+

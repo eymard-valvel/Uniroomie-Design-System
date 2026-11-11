@@ -1,0 +1,9 @@
+.ur-radio { display: inline-flex; align-items: center; gap: 8px; color: var(--ur-text); font: var(--ur-font-weight-normal) var(--ur-font-size-sm) var(--ur-font-family); cursor: pointer; }
+.ur-radio__input { position: absolute; width: 1px; height: 1px; opacity: 0; }
+.ur-radio__circle { display: inline-grid; place-items: center; width: 18px; height: 18px; flex: 0 0 18px; border: 1px solid #aab4be; border-radius: 50%; background: #fff; }
+.ur-radio__circle::after { content: ""; width: 8px; height: 8px; border-radius: 50%; background: #fff; transform: scale(0); }
+.ur-radio__input:checked + .ur-radio__circle { background: var(--ur-primary); border-color: var(--ur-primary); }
+.ur-radio__input:checked + .ur-radio__circle::after { transform: scale(1); }
+.ur-radio__input:focus-visible + .ur-radio__circle { outline: 2px solid var(--ur-focus); outline-offset: 2px; }
+.ur-radio__input:disabled + .ur-radio__circle { background: var(--ur-disabled-bg); border-color: var(--ur-border); }
+.ur-radio:has(.ur-radio__input:disabled) { color: var(--ur-disabled-text); cursor: not-allowed; }

@@ -1,0 +1,7 @@
+.ur-dropdown { display: grid; gap: 6px; width: 100%; font-family: var(--ur-font-family); }
+.ur-dropdown__label { color: var(--ur-text-muted); font-size: var(--ur-font-size-xs); }
+.ur-dropdown__select { width: 100%; min-height: 40px; padding: 8px 36px 8px 12px; border: 1px solid var(--ur-border); border-radius: var(--ur-radius-md); background: #fff; color: var(--ur-text); font: var(--ur-font-size-sm) var(--ur-font-family); cursor: pointer; }
+.ur-dropdown__select:focus-visible { outline: 2px solid var(--ur-focus); outline-offset: 2px; }
+.ur-dropdown--error .ur-dropdown__select { border-color: var(--ur-error); }
+.ur-dropdown__error { color: var(--ur-error); font-size: var(--ur-font-size-xs); }
+.ur-dropdown__select:disabled { background: var(--ur-disabled-bg); color: var(--ur-disabled-text); cursor: not-allowed; }
